@@ -1,0 +1,5 @@
+mouce_keyboard = dict(uz="🖱️compyuter sichqoncha", ru="🖱️компьютерная мышь")
+more_keyboard = dict(uz="🌐Batafsil", ru="🌐Подробнее")
+buy_keyboard = dict(uz="🛒Sotib olish", ru="🛒Приобрести")
+next_keyboard = dict(uz="⏩Oldinga", ru="⏩Вперед")
+back_keyboard = dict(uz="⏪Orqaga", ru="⏪Назад")
