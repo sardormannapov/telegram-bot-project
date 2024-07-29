@@ -1,3 +1,5 @@
+import os
+
 import psycopg2
 
 
@@ -5,10 +7,10 @@ class Postgres:
 
     def __init__(self):
         self.data_base = psycopg2.connect(
-                        host='localhost',
-                        user='postgres',
-                        database='online_store',
-                        password='123456'
+                        host= os.getenv("HOST"),
+                        user= os.getenv("USER"),
+                        database= os.getenv("DATABASE"),
+                        password= os.getenv("PASSWORD")
                         )
         self.cursor = self.data_base.cursor()
 

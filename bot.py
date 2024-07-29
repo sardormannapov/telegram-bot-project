@@ -9,8 +9,8 @@ user_langs = {}
 
 
 
-token = "7163597323:AAEQEk1fIlwF_wqIFW4zuPhU4lHDTmJFWjw"
-click_token = "398062629:TEST:999999999_F91D8F69C042267444B74CC0B3C747757EB0E065"
+token = os.getenv("TOKEN")
+click_token = os.getenv("CLICK_TOKEN")
 
 bot = telebot.TeleBot(token)
 
@@ -77,9 +77,6 @@ def main_catalogs(message, product_id=0, products=None):
         bot.send_message(chat_id, tugadi_lang[lang])
         product_id = product_id - len(products)  # -1
     bot.register_next_step_handler(user_message, main_catalogs, product_id, products)
-
-
-
 
 
 
